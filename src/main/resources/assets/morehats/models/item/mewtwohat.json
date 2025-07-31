@@ -1,0 +1,195 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"particle": "morehats:item/mewtwo"
+	},
+	"elements": [
+		{
+			"name": "eye",
+			"from": [10.01, 3.32963, 4.36807],
+			"to": [11.01, 5.32963, 7.36807],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [10.51, 4.32963, 5.86807]},
+			"faces": {
+				"north": {"uv": [14, 2.5, 14.25, 3], "texture": "#particle"},
+				"east": {"uv": [13.25, 2.5, 14, 3], "texture": "#particle"},
+				"south": {"uv": [15, 2.5, 15.25, 3], "texture": "#particle"},
+				"west": {"uv": [14.25, 2.5, 15, 3], "texture": "#particle"},
+				"up": {"uv": [14.25, 2.5, 14, 1.75], "texture": "#particle"},
+				"down": {"uv": [14.5, 1.75, 14.25, 2.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "eye",
+			"from": [9.9, 4.11963, 4.75807],
+			"to": [10.92, 6.13963, 7.77807],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [10.41, 5.12963, 6.26807]},
+			"faces": {
+				"north": {"uv": [14, 0.75, 14.25, 1.25], "texture": "#particle"},
+				"east": {"uv": [13.25, 0.75, 14, 1.25], "texture": "#particle"},
+				"south": {"uv": [15, 0.75, 15.25, 1.25], "texture": "#particle"},
+				"west": {"uv": [14.25, 0.75, 15, 1.25], "texture": "#particle"},
+				"up": {"uv": [14.25, 0.75, 14, 0], "texture": "#particle"},
+				"down": {"uv": [14.5, 0, 14.25, 0.75], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "eye",
+			"from": [5.08, 4.11963, 4.75807],
+			"to": [6.1, 6.13963, 7.77807],
+			"rotation": {"angle": -45, "axis": "x", "origin": [5.59, 5.12963, 6.26807]},
+			"faces": {
+				"north": {"uv": [10.25, 13.75, 10.5, 14.25], "texture": "#particle"},
+				"east": {"uv": [9.5, 13.75, 10.25, 14.25], "texture": "#particle"},
+				"south": {"uv": [11.25, 13.75, 11.5, 14.25], "texture": "#particle"},
+				"west": {"uv": [10.5, 13.75, 11.25, 14.25], "texture": "#particle"},
+				"up": {"uv": [10.5, 13.75, 10.25, 13], "texture": "#particle"},
+				"down": {"uv": [10.75, 13, 10.5, 13.75], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "eye",
+			"from": [4.99, 3.32963, 4.36807],
+			"to": [5.99, 5.32963, 7.36807],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [5.49, 4.32963, 5.86807]},
+			"faces": {
+				"north": {"uv": [13.75, 11, 14, 11.5], "texture": "#particle"},
+				"east": {"uv": [13, 11, 13.75, 11.5], "texture": "#particle"},
+				"south": {"uv": [14.75, 11, 15, 11.5], "texture": "#particle"},
+				"west": {"uv": [14, 11, 14.75, 11.5], "texture": "#particle"},
+				"up": {"uv": [14, 11, 13.75, 10.25], "texture": "#particle"},
+				"down": {"uv": [14.25, 10.25, 14, 11], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "jaw",
+			"from": [7, 1.18707, 2.78354],
+			"to": [9, 2.18707, 4.78354],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 23.3, 12.65]},
+			"faces": {
+				"north": {"uv": [6, 11, 6.5, 11.25], "texture": "#particle"},
+				"east": {"uv": [5.5, 11, 6, 11.25], "texture": "#particle"},
+				"south": {"uv": [7, 11, 7.5, 11.25], "texture": "#particle"},
+				"west": {"uv": [6.5, 11, 7, 11.25], "texture": "#particle"},
+				"up": {"uv": [6.5, 11, 6, 10.5], "texture": "#particle"},
+				"down": {"uv": [7, 10.5, 6.5, 11], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "snout",
+			"from": [6.5, 1.5, 1.75],
+			"to": [9.5, 3.5, 3.75],
+			"rotation": {"angle": -10, "axis": "x", "origin": [8, 3.5, 3.75]},
+			"faces": {
+				"north": {"uv": [10, 0.5, 10.75, 1], "texture": "#particle"},
+				"east": {"uv": [9.5, 0.5, 10, 1], "texture": "#particle"},
+				"south": {"uv": [11.25, 0.5, 12, 1], "texture": "#particle"},
+				"west": {"uv": [10.75, 0.5, 11.25, 1], "texture": "#particle"},
+				"up": {"uv": [10.75, 0.5, 10, 0], "texture": "#particle"},
+				"down": {"uv": [11.5, 0, 10.75, 0.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "ear",
+			"from": [9.5, 6.5, 6.75],
+			"to": [10.5, 9.5, 8.75],
+			"rotation": {"angle": 15, "axis": "x", "origin": [10, 6.5, 6.75]},
+			"faces": {
+				"north": {"uv": [0.5, 0.5, 0.75, 1.25], "texture": "#particle"},
+				"east": {"uv": [0, 0.5, 0.5, 1.25], "texture": "#particle"},
+				"south": {"uv": [1.25, 0.5, 1.5, 1.25], "texture": "#particle"},
+				"west": {"uv": [0.75, 0.5, 1.25, 1.25], "texture": "#particle"},
+				"up": {"uv": [0.75, 0.5, 0.5, 0], "texture": "#particle"},
+				"down": {"uv": [1, 0, 0.75, 0.5], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "ear",
+			"from": [5.5, 6.5, 6.75],
+			"to": [6.5, 9.5, 8.75],
+			"rotation": {"angle": 15, "axis": "x", "origin": [6, 6.5, 6.75]},
+			"faces": {
+				"north": {"uv": [0.5, 4, 0.75, 4.75], "texture": "#particle"},
+				"east": {"uv": [0, 4, 0.5, 4.75], "texture": "#particle"},
+				"south": {"uv": [1.25, 4, 1.5, 4.75], "texture": "#particle"},
+				"west": {"uv": [0.75, 4, 1.25, 4.75], "texture": "#particle"},
+				"up": {"uv": [0.75, 4, 0.5, 3.5], "texture": "#particle"},
+				"down": {"uv": [1, 3.5, 0.75, 4], "texture": "#particle"}
+			}
+		},
+		{
+			"name": "head",
+			"from": [5, 1.5, 3.75],
+			"to": [11, 6.5, 9.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 1.5, 6.75]},
+			"faces": {
+				"north": {"uv": [1.5, 5, 3, 6.25], "texture": "#particle"},
+				"east": {"uv": [0, 5, 1.5, 6.25], "texture": "#particle"},
+				"south": {"uv": [4.5, 5, 6, 6.25], "texture": "#particle"},
+				"west": {"uv": [3, 5, 4.5, 6.25], "texture": "#particle"},
+				"up": {"uv": [3, 5, 1.5, 3.5], "texture": "#particle"},
+				"down": {"uv": [4.5, 3.5, 3, 5], "texture": "#particle"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "mewtwo",
+			"origin": [8, 0, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "body",
+					"origin": [8, 21, 8],
+					"color": 0,
+					"children": [
+						{
+							"name": "torso",
+							"origin": [8, 11, 7.75],
+							"color": 0,
+							"children": [
+								{
+									"name": "torso2",
+									"origin": [8.5, 20, 8.5],
+									"color": 0,
+									"children": [
+										{
+											"name": "neck",
+											"origin": [8, 23, 7.25],
+											"color": 0,
+											"children": [
+												{
+													"name": "cord",
+													"origin": [8, 26, 9.25],
+													"color": 0,
+													"children": []
+												},
+												{
+													"name": "eye_left",
+													"origin": [5.49, 27.06512, 5.5843],
+													"color": 0,
+													"children": [0, 1, 2, 3]
+												},
+												{
+													"name": "jaw",
+													"origin": [8, 25, 4.75],
+													"color": 0,
+													"children": [4]
+												},
+												5,
+												6,
+												7,
+												8
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

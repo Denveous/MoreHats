@@ -1,0 +1,68 @@
+plugins {
+    id "fabric-loom" version "1.8-SNAPSHOT"
+    id "maven-publish"
+}
+
+version = "1.0.4"
+group = "com.morehats"
+
+repositories {
+    maven { url = "https://maven.terraformersmc.com/releases" }
+    maven { url = "https://maven.ladysnake.org/releases" }
+    maven { url = "https://maven.shedaniel.me/" }
+    maven { url = "https://cursemaven.com" }
+    maven { url = "https://api.modrinth.com/maven" }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
+    
+    modImplementation "dev.emi:trinkets:${trinkets_version}"
+    modCompileOnly "maven.modrinth:give-me-hats:${givemehats_version}"
+}
+
+processResources {
+    inputs.property "version", project.version
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 21
+}
+
+tasks.register('copyJarToBin', Copy) {
+    from(tasks.remapJar)
+    into('bin')
+}
+
+tasks.build.finalizedBy('copyJarToBin')
+
+tasks.register('copyJarToMods', Copy) {
+    from(tasks.remapJar)
+    into("${System.getenv('APPDATA')}/.minecraft/versions/Test Client/mods")
+    doFirst {
+        delete fileTree("${System.getenv('APPDATA')}/.minecraft/versions/Test Client/mods") {
+            include '*morehats*'
+        }
+    }
+
+    // todo: autocopy into modpack res folder
+}
+
+tasks.register('testBuild') {
+    dependsOn('build')
+    finalizedBy('copyJarToMods')
+    group = 'build'
+    description = 'Builds the mod and copies it to the mods folder'
+}
+
+java {
+    withSourcesJar()
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}

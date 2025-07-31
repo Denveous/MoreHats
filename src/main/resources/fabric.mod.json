@@ -1,0 +1,27 @@
+{
+  "description": "Adds more hats to the game, including some Pokemon themed hats", 
+  "license": "MIT", 
+  "authors": [
+    "Denveous"
+  ], 
+  "suggests": { "givemehats": ">=4.0.0" }, 
+  "id": "morehats", 
+  "contact": {}, 
+  "depends": {
+    "minecraft": "~1.21.1", 
+    "fabric-api": "*", 
+    "trinkets": ">=3.10.0", 
+    "fabricloader": ">=0.16.0"
+  }, 
+  "entrypoints": {
+    "main": [
+      "com.morehats.MoreHats"
+    ]
+  }, 
+  "version": "1.0.0", 
+  "environment": "*", 
+  "mixins": [], 
+  "name": "More Hats Addon", 
+  "schemaVersion": 1, 
+  "icon": "assets/morehats/icon.png"
+}
